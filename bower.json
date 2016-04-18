@@ -1,0 +1,14 @@
+{
+    "name": "ada-loading-bar",
+    "version": "1.0.0",
+    "main": "ada-loading-bar.min.js",
+    "ignore":[
+      
+    ],
+    "dependencies": {
+       "jquery": "*",
+	   "angular": "1.5.0-rc.0"
+    },
+    "devDependencies": {     
+    }
+}
