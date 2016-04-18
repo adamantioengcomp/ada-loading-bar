@@ -32,6 +32,17 @@ For changing the icon, use the <b>icon</b> property. The value must be an font a
 <loading message="New Loading Message..." icon="fa-spinner"/>
 ```
 
-4. s
+4. On controller, import the service: "LoadingBar"
+
+<pre>
+app.controller('myController', function(LoadingBar){
+
+...
+
+})
+</pre>
+
+5. s
+6. s
 
 
