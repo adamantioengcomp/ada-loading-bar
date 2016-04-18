@@ -42,7 +42,7 @@ loadingBar.factory('LoadingBar',function($q){
 	
 }).directive('loading', function(){
 
-	var script = document.querySelector("[src$='loading-bar.js']");	
+	var script = document.querySelector("[src$='ada-loading-bar.js']");	
 
 	if (!script) console.error("loading-bar.js file not found");
 
