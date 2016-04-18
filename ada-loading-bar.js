@@ -42,7 +42,12 @@ loadingBar.factory('LoadingBar',function($q){
 	
 }).directive('loading', function(){
 
-	var script = document.querySelector("[src$='ada-loading-bar.js']");	
+	var scriptName = 'ada-loading-bar.js';
+	var script = document.querySelector("[src$='" +scriptName+ "']");
+	if (!script){
+		scriptName = 'ada-loading-bar.min.js';
+		script = document.querySelector("[src$='" +scriptName+ "']");
+	}
 
 	if (!script) console.error("loading-bar.js file not found");
 
@@ -56,6 +61,6 @@ loadingBar.factory('LoadingBar',function($q){
 			msg:'@message',
 			icon:'=icon',
 		},
-		templateUrl:currentScriptPath.replace('loading-bar.js', 'loading-bar.html')
+		templateUrl:currentScriptPath.replace(scriptName, 'ada-loading-bar.html')
 	};
 });
