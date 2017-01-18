@@ -1,6 +1,6 @@
 {
     "name": "ada-loading-bar",
-    "version": "1.0.0",
+    "version": "v1.0.000",
     "main": "ada-loading-bar.min.js",
     "ignore":[
       
